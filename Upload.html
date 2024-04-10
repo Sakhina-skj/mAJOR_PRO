@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Contact Us Page</title>
+    <link rel="stylesheet" href="Styles_css/style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="tnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="Science.html">Browse</a>
+        <a href="Upload.html">Upload</a>
+        <a href="Query.html">Query</a>
+    </nav>
+
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Upload <span>Your Book</span></h1>
+            <p>Upload your book to Educate the people and give the beautiful effort to bring Smile for those who loved reading Books.</p>
+            <form action="process_form.php" method="post" enctype="multipart/form-data" >
+                <input type="text" placeholder="Your Name" required>
+                <input type="number" placeholder="Contact Number" required>
+                <input type="text" placeholder="Your Book Title" required>
+                <input type="email" name="email" id="" placeholder="E-mail" required> 
+                <textarea name="" id="" cols="30" rows="10" placeholder="Describe Something About Your Book" required></textarea>
+                <input type="file" id="myFile" name="myfile">
+                <input type="submit" name="" value="Submit" class="btn">
+            </form>
+        </div>
+        <div class="contact-img">
+            <img src="Images/Img.jpg" alt="Contact Image"class="active">  
+            <img src="Images/Img.jpg" alt="Contact Image">
+            <img src="Images/Img.jpg" alt="Contact Image">
+            <img src="Images/Img.jpg" alt="Contact Image">     
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contact me:</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="link.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="Instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="contact-details">
+                <span>Mobile: +1234567890</span>
+                <span>Email: example@example.com</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+    function uploadFile() {
+        var fileInput = document.getElementById("myFile");
+        var file = fileInput.files[0];
+        
+        // Do something with the uploaded file here
+        
+        // For example, you can display the file name
+        alert("File uploaded: " + file.name);
+      }
+    </script>
+</body>
+</html>
+
+9504962025@srvkjs

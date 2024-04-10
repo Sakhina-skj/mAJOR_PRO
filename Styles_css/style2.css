@@ -1,0 +1,124 @@
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.header {
+    background-color: black;
+    height: 850px;
+}
+
+.image {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 10%;
+    height: 10px;
+}
+
+.tnav {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tnav a {
+    float: left;
+    display: block;
+    color: white;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.tnav a:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.shop-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    border: 10px solid black;
+    height: 700px;
+    width: 23%;
+    background-color: rgb(137, 116, 116);
+    background-position: no-repeat;
+    overflow: hidden; /* Added overflow property to ensure hover effect works */
+    transition: transform 0.3s ease-in-out; /* Adjusted transition property */
+}
+
+.box:hover .box-img { /* Added this rule to apply hover effect on .box-img */
+    transform: scale(1.1);
+}
+
+.box-img {
+    height: 700px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 60px;
+}
+
+.button {
+    padding: 6px 12px;
+    margin: 0.5em 0;
+    background: green;
+    color: white;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-details span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}

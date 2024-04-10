@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.tnav{
+    overflow: hidden;
+    background-color:black;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.tnav a {
+    float: left;
+    display: block;
+    color:white;
+    align-items: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.tnav a:hover {
+    background-color:blue;
+    color: whitesmoke;
+}
+
+section {
+    padding: 40px 15%;
+}
+
+.contact {
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #f90048;
+}
+
+.contact-form p {
+    color: #c6c9d8;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form form .btn {
+    display: inline-block;
+    background: #f9004d;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+
+.contact-form form .btn:hover {
+    border: 2px solid #f9004d;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1570px) {
+    section {
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1 {
+        font-size: 2.5rem;
+    }
+    .contact-form p {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1090px) {
+    .contact {
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .contact-form {
+        order: 2;
+    }
+    .contact-img img {
+        margin-bottom: 30px;
+    }
+}
+
+#myFile {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+ #myFile:hover {
+    background-color: #45a049;
+  }
+
+
+  .contact-img {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.contact-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0; /* Initially hide all images */
+    transition: opacity 1s ease; /* Smooth transition for opacity */
+}
+
+.contact-img img.active {
+    opacity: 1; /* Display active image */
+    transition: opacity 1s ease; /* Smooth transition for opacity */
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.contact-img img:nth-child(1) {
+    animation: imageAnimation 12s infinite; /* Adjust duration as needed */
+}
+
+.contact-img img:nth-child(2) {
+    animation: imageAnimation 12s infinite 3s; /* Adjust delay and duration as needed */
+}
+
+.contact-img img:nth-child(3) {
+    animation: imageAnimation 12s infinite 6s; /* Adjust delay and duration as needed */
+}
+
+.contact-img img:nth-child(4) {
+    animation: imageAnimation 12s infinite 9s; /* Adjust delay and duration as needed */
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-details span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
